@@ -11,6 +11,8 @@
   <p>
     Building a model to classify and evaluate push-up movements by processing initial data in the form of videos using MediaPipe Pose to obtain body landmark data that is processed until it is ready to become a dataset for training. The result is the best model with an accuracy of 90.02% in testing. In addition to building the model, a simple simulation was also built using Python that runs in real time, and the test results with the simulation obtained an accuracy of 95.05%. Thus, the model can properly recognize and classify push-up movements.
   </p>
+  <a href="https://ojs.stmik-banjarbaru.ac.id/index.php/jutisi/article/view/3363">Publication 1</a>
+  <a href="">Publication 2</a>
 </div>
 <br>
 <div>
