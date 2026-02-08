@@ -2,6 +2,11 @@
   <h1 align="center">
     Model Development for Push-Up Counting By Utilizing Body Landmarks and LSTM Algorithm
   </h1>
+  <div align="center">
+    <img src="https://github.com/ItMeBayu/ItMeBayu/blob/main/assets/push-up_classification/cover.png" alt="Push-up Counting By Utilizing Body Landmarks and LSTM Algorithm" width="400">
+  </div>
+  
+  <br>
   <h2> Description</h2>
   <p>
     Building a model to classify and evaluate push-up movements by processing initial data in the form of videos using MediaPipe Pose to obtain body landmark data that is processed until it is ready to become a dataset for training. The result is the best model with an accuracy of 90.02% in testing. In addition to building the model, a simple simulation was also built using Python that runs in real time, and the test results with the simulation obtained an accuracy of 95.05%. Thus, the model can properly recognize and classify push-up movements.
@@ -13,17 +18,17 @@
     <p>Training and testing process graph of the best model</p>
     <details>
       <summary>Accuraccy & Loss</summary>
-      <img src="https://raw.github.com/snapmoo/snapmoo/main/assets/Machine%20Learning/Accuracy.png" alt="Accuracy Model" class="dropdown-image">
+      <img src="https://github.com/ItMeBayu/ItMeBayu/blob/main/assets/push-up_classification/log_training.png" alt="Accuracy & Loss Model" class="dropdown-image" width="800">
     </details>
     <details>
       <summary>Confusion Matrix</summary>
-      <img src="https://raw.github.com/snapmoo/snapmoo/main/assets/Machine%20Learning/Accuracy.png" alt="Accuracy Model" class="dropdown-image">
+      <img src="https://github.com/ItMeBayu/ItMeBayu/blob/main/assets/push-up_classification/confusion_matrix.png" alt="Confusion Matrix" class="dropdown-image" width="500">
     </details>
     <details>
       <summary>Video Testing Simulation</summary>
       <p align="center">
         <a href="https://youtu.be/BM2rLyKfvcE">
-          <img src="https://raw.github.com/snapmoo/snapmoo/main/assets/Machine%20Learning/Accuracy.png" width="700">
+          <img src="https://github.com/ItMeBayu/ItMeBayu/blob/main/assets/push-up_classification/youtube12.png" width=300">
         </a>
       </p>
     </details>
@@ -41,12 +46,12 @@
       <p>Before training the model, the data will first be divided into training and testing data with a ratio of 80:20. Later, K-Fold Cross Validation will be used in the training and also use early stopping to get the best model. The training stages are also divided into two stages.</p>
       <div>
         <div>
-          <h5>First Stage Training</h6>
-          <p>In the first stage, training was conducted by testing eight different architectures to find the optimal layer combination. Using the Adam optimizer.</p>
+          <h5>    First Stage Training</h6>
+          <p>  In the first stage, training was conducted by testing eight different architectures to find the optimal layer combination. Using the Adam optimizer.</p>
         </div>
           <div>
-            <h5>Second Stage Training</h6>
-            <p>In the second stage of the training process, hyperparameter optimization was carried out in the form of learning rate values and the addition of regularization. The architecture used was the best from the first stage. In this stage, a total of 11 training sessions were carried out with different configurations.</p>
+            <h5>  Second Stage Training</h6>
+            <p> In the second stage of the training process, hyperparameter optimization was carried out in the form of learning rate values and the addition of regularization. The architecture used was the best from the first stage. In this stage, a total of 11 training sessions were carried out with different configurations.</p>
           </div>
       </div>
     <h4>Simulation Development and Testing</h4>
